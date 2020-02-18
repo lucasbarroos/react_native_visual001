@@ -1,23 +1,30 @@
 import React from 'react';
-import {createSwitchNavigator, createAppContainer} from 'react-navigation';
-import {Transition} from 'react-native-reanimated';
+import { createSwitchNavigator, createAppContainer } from 'react-navigation';
+import createAnimatedSwitchNavigator from 'react-navigation-animated-switch';
+import { Transition } from 'react-native-reanimated';
 import Main from './pages/Main';
+import Travel from './pages/Travel';
 
-const mainNavigation = createSwitchNavigator(
+const mainNavigation = createAnimatedSwitchNavigator(
   {
-    Main: {screen: Main},
+    Main: { screen: Main },
+    Travel: { screen: Travel }
   },
   {
     transition: (
       <Transition.Together>
         <Transition.Out
-          type="slide-bottom"
-          durationMs={400}
+          type="slide-top"
+          durationMs={100}
           interpolation="easeIn"
         />
-        <Transition.In type="fade" durationMs={500} />
+        <Transition.In
+          type="slide-bottom"
+          delayMs={300}
+          durationMs={300}
+        />
       </Transition.Together>
-    ),
+    )
   },
 );
 

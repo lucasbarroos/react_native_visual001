@@ -1,8 +1,9 @@
 import React from 'react';
 import Routes from './routes';
-import {StatusBar} from 'react-native';
+import { StatusBar, BackHandler } from 'react-native';
 
-const App = () => {
+const App = ({ navigation }) => {
+
   return (
     <>
       <StatusBar backgroundColor="black" barStyle="light-content" />

@@ -15,17 +15,19 @@ export const Card = styled.ImageBackground`
   position: relative;
   box-shadow: 1px 1px 1px black;
   margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 `;
 
 export const PageTitle = styled.Text`
   color: white;
   text-shadow: 0px 1px 3px #999;
-  font-family: sans-serif;
+  font-family: 'FiraCode-Light';
   font-size: 42px;
   position: absolute;
   bottom: 50px;
   right: 10px;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 5px;
 `;
 

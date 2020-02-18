@@ -1,8 +1,9 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {Container, Card, PageTitle, CardDetails} from './styles';
+import { TouchableOpacity } from 'react-native';
+import { Container, Card, PageTitle, CardDetails } from './styles';
 
-export default function Main() {
+export default function Main({ navigation }) {
   const image =
     'https://cstad.s3-ap-southeast-2.amazonaws.com/3146_Taste_Of_Italy_web_hero.jpg';
   const image2 =
@@ -10,13 +11,17 @@ export default function Main() {
 
   return (
     <Container>
-      <Card source={{uri: image}} imageStyle={{borderRadius: 20}}>
-        <PageTitle>Italy</PageTitle>
-        <CardDetails>11/JAN/2020</CardDetails>
+      <Card source={{ uri: image }} imageStyle={{ borderRadius: 20 }} onPress={() => alert('Touched')}>
+        <TouchableOpacity onPress={() => { navigation.navigate('Travel') }} style={{ position: 'relative', height: '100%', width: '100%' }}>
+          <PageTitle>Italy</PageTitle>
+          <CardDetails>11/JAN/2020</CardDetails>
+        </TouchableOpacity>
       </Card>
-      <Card source={{uri: image2}} imageStyle={{borderRadius: 20}}>
-        <PageTitle>Germany</PageTitle>
-        <CardDetails>03/FEV/2020</CardDetails>
+      <Card source={{ uri: image2 }} imageStyle={{ borderRadius: 20 }}>
+        <TouchableOpacity onPress={() => { navigation.navigate('Travel') }} style={{ position: 'relative', height: '100%', width: '100%' }}>
+          <PageTitle>Germany</PageTitle>
+          <CardDetails>03/FEV/2020</CardDetails>
+        </TouchableOpacity>
       </Card>
     </Container>
   );
