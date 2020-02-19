@@ -5,18 +5,15 @@ export const Container = styled.View`
   height: 100%;
   width: 100%;
   background-color: ghostwhite;
-  display: flex;
-  align-items: center;
 `;
 
 export const Card = styled.ImageBackground`
-  height: 25%;
-  width: 95%;
+  height: 150px;
   position: relative;
   box-shadow: 1px 1px 1px black;
   margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  border-radius: 10px;
 `;
 
 export const PageTitle = styled.Text`
@@ -28,15 +25,16 @@ export const PageTitle = styled.Text`
   bottom: 50px;
   right: 10px;
   font-weight: 500;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 `;
 
 export const CardDetails = styled.Text`
   color: white;
   text-shadow: 0px 1px 3px #999;
+  font-family: 'FiraCode-Medium';
   font-size: 16px;
   position: absolute;
   bottom: 30px;
   right: 10px;
-  font-weight: bold;
+  letter-spacing: 2px;
 `;

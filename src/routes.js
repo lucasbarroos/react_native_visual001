@@ -8,7 +8,7 @@ import Travel from './pages/Travel';
 const mainNavigation = createAnimatedSwitchNavigator(
   {
     Main: { screen: Main },
-    Travel: { screen: Travel }
+    Travel: { screen: Travel, params: { _id: 1 } }
   },
   {
     transition: (
