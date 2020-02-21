@@ -15,8 +15,13 @@ export default function Main({ navigation }) {
     }, {
       uri: 'https://travelalligator.com/wp-content/uploads/2019/06/italy-travel-tips.jpg',
       description: 'Amazing experience'
-    }]
-  }, {
+    }, {
+      uri: 'https://cstad.s3-ap-southeast-2.amazonaws.com/3146_Taste_Of_Italy_web_hero.jpg',
+      description: 'The paradise'
+    }
+    ]
+  },
+  {
     _id: '2',
     location: 'Germany',
     uri: 'https://www.tripsavvy.com/thmb/tnJ_frn5LmRMCxPzUd36wf7AExs=/3826x2603/filters:fill(auto,1)/christmas-market-weihnachtsmarkt-frauenkirche-n-rnberg-nuremberg-bavaria-germany-140337546-58f4c2523df78cd3fc1049d1.jpg',

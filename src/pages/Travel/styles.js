@@ -5,20 +5,25 @@ export const Container = styled.View`
   width: 100%;
 `;
 
-export const Header = styled.ImageBackground`
+export const Header = styled.View`
   position: relative;
-  height: 40%;
+  height: 60px;
   width: 100%;
   display: flex;
+  align-items: center;
+`;
+
+export const HeaderLogo = styled.ImageBackground`  
+  height: 90%;
+  width: 40%;
 `;
 
 export const PageTitle = styled.Text`
   position: absolute;
-  top: 20px;
   width: 100%;
   font-family: 'FiraCode-Light';
   text-align: center;
-  font-size: 72px;
+  font-size: 32px;
   color: white;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 `;
@@ -49,7 +54,7 @@ export const Icon = styled.Image`
 `;
 
 export const Post = styled.View`
-  height: 240px;
+  height: 280px;
   width: 100%;
 `;
 
